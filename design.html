@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design — Cobra-Head Retrofit Hood</title>
+<meta name="description" content="CAD model, dimensions, mounting method, and revision history for the retrofit hood.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <span class="brand-code">CHF-27-RH-001</span>
+      <span class="brand-name">Cobra-Head Retrofit Hood</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu ☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="design.html" aria-current="page">Design</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Design</span>
+      <h1>CAD model &amp; dimensions</h1>
+      <p class="lede">
+        A parametric 27" hood sized for standard cobra-head fixtures. The geometry below is a rough-complete
+        first pass — dimensions and shielding angles are still being adjusted as we run wind, thermal, and
+        photometric checks.
+      </p>
+      <div class="hero-meta" style="margin-top:20px;">
+        <span><strong>Drawing no.</strong> CHF-27-RH-001</span>
+        <span><strong>Rev</strong> 1.0</span>
+        <span><strong>Date</strong> July 2026</span>
+        <span><strong>Formats</strong> STEP · STL · SVG · Python (CadQuery)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HERO RENDER ============ -->
+  <section>
+    <div class="container">
+      <figure class="figure">
+        <img src="assets/images/cad-iso-hero.png" alt="Isometric render of the retrofit hood shell showing the front visor, side shielding wings, ventilation slots, and photocell collar.">
+        <div class="figure-caption">
+          <span class="cap-label">Fig. 1 — Isometric overview</span>
+          <p><strong>Description:</strong> Full hood shell in isometric view, showing the front visor, side shielding wings, ventilation slots, and the raised photocell collar.</p>
+        </div>
+      </figure>
+      <div class="qa-box">
+        <strong>Reason for design:</strong> the visor and side wings block high-angle light without fully enclosing the fixture, so airflow and photocell function are preserved.
+        <br><strong>Still being investigated:</strong> whether the current visor extension (50 mm) blocks enough high-angle glare without cutting too much usable roadway light.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MULTI-VIEW GRID ============ -->
+  <section class="section-alt section-border tight">
+    <div class="container">
+      <figure class="figure">
+        <img src="assets/images/cad-views-grid.png" alt="Grid of CAD render views: isometric, second isometric angle, front, side, and top orthographic views of the hood.">
+        <div class="figure-caption">
+          <span class="cap-label">Fig. 2 — Multi-view render set</span>
+          <p><strong>Description:</strong> Isometric, front, side, and top views of the same model, used to check proportions from every angle before dimensioning.</p>
+        </div>
+      </figure>
+      <div class="qa-box">
+        <strong>Reason for design:</strong> checking all four views together makes it easier to catch asymmetry or interference issues early, before cutting a dimensioned drawing.
+        <br><strong>Still being investigated:</strong> whether the top-view mounting slot spacing lines up with common tenon bracket hole patterns across manufacturers.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIMENSIONED DRAWING ============ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Dimensioned drawing</span>
+        <h2>Top, side, and front views</h2>
+      </div>
+      <figure class="figure">
+        <img src="assets/images/cad-dimensioned-drawing.png" alt="Dimensioned engineering drawing showing top, side, and front views of the retrofit hood with labeled measurements in millimeters and inches.">
+        <div class="figure-caption">
+          <span class="cap-label">Fig. 3 — Dimensioned drawing, DWG CHF-27-RH-001</span>
+          <p><strong>Description:</strong> Full dimension set with the hood's length, width, depth, visor extension, and side overhang called out in mm (in).</p>
+        </div>
+      </figure>
+      <div class="qa-box">
+        <strong>Still being investigated:</strong> the estimated 10% increase in effective projected area (EPA) from wind loading is a rough hand estimate, not a calculated result — a real wind load analysis hasn't been run yet.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KEY DIMENSIONS TABLE ============ -->
+  <section class="section-alt section-border">
+    <div class="container">
+      <div class="grid grid-2" style="gap:40px; align-items:start;">
+        <div>
+          <h2>Key dimensions</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Dimension</th><th>Value</th></tr></thead>
+              <tbody>
+                <tr><td>Length (L)</td><td class="num">686 mm (27.0 in)</td></tr>
+                <tr><td>Width (W)</td><td class="num">229 mm (9.0 in)</td></tr>
+                <tr><td>Depth (D) below fixture</td><td class="num">38 mm (1.5 in)</td></tr>
+                <tr><td>Front visor extension (E)</td><td class="num">50 mm (2.0 in)</td></tr>
+                <tr><td>Side overhang (each side)</td><td class="num">13 mm (0.5 in)</td></tr>
+                <tr><td>Overall width incl. overhang</td><td class="num">254 mm (10.0 in)</td></tr>
+                <tr><td>Amber panel size</td><td class="num">610 × 178 mm (24 × 7 in)</td></tr>
+                <tr><td>Amber panel thickness</td><td class="num">3 mm (1/8 in)</td></tr>
+                <tr><td>Weight (hood only)</td><td class="num">~2.0 lbs (est.)</td></tr>
+                <tr><td>EPA increase</td><td class="num">&lt; 10% (est.)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h2>Materials</h2>
+          <ul class="checklist" style="margin-bottom:24px;">
+            <li><span>Hood shell</span><span style="color:var(--ink-faint); font-size:0.85rem;">16 ga (1.5 mm) aluminum or UV-stabilized polycarbonate</span></li>
+            <li><span>Amber filter panel</span><span style="color:var(--ink-faint); font-size:0.85rem;">3 mm (1/8") UV-stabilized polycarbonate</span></li>
+            <li><span>Hardware</span><span style="color:var(--ink-faint); font-size:0.85rem;">Stainless steel</span></li>
+          </ul>
+          <h2>Notes</h2>
+          <ul style="padding-left:20px; color:var(--ink-soft); font-size:0.92rem;">
+            <li>All dimensions in millimeters, with inches in parentheses.</li>
+            <li>Hood is symmetrical left to right.</li>
+            <li>Amber panel is removable for cleaning and maintenance.</li>
+            <li>Photocell on top of the fixture must remain unobstructed.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MOUNTING METHOD ============ -->
+  <section class="section-border">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Mounting method</span>
+        <h2>Clamp-on, no drilling</h2>
+        <p>The hood attaches with a separate bracket assembly at the rear, sized to grip the fixture's existing mounting arm.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Rear clamp brackets</h3>
+          <p>Two L-shaped stainless steel plates, each with a curved notch sized to grip a 1¼"–2" OD tenon arm.</p>
+        </div>
+        <div class="card">
+          <h3>Center safety bracket</h3>
+          <p>One optional center bracket adds a secondary attachment point without requiring any drilling.</p>
+        </div>
+        <div class="card">
+          <h3>Ventilation slots</h3>
+          <p>Four slot cutouts (25 × 75 mm, two per side) subtracted through the shell to reduce added wind load.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIGHT DISTRIBUTION COMPARISON DIAGRAM ============ -->
+  <section class="section-alt section-border">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Expected effect</span>
+        <h2>Existing fixture vs. with retrofit hood</h2>
+        <p>
+          This is a schematic illustration of the intended effect, not a photometric measurement. We have not
+          yet run a simulation or field test to confirm the actual light distribution — see
+          <a href="research.html">Research</a> for what that testing will involve.
+        </p>
+      </div>
+
+      <div class="diagram-frame">
+        <svg viewBox="0 0 1000 420" role="img" aria-labelledby="lightDiagramTitle lightDiagramDesc" xmlns="http://www.w3.org/2000/svg">
+          <title id="lightDiagramTitle">Comparison of light spill: existing unshielded fixture versus fixture with retrofit hood</title>
+          <desc id="lightDiagramDesc">Left panel shows an unshielded cobra-head fixture with light spilling upward and sideways as well as downward. Right panel shows the same fixture with a retrofit hood, where upward and sideways spill is reduced and light is directed mainly downward. Labeled as an expected, unverified effect.</desc>
+
+          <!-- divider -->
+          <line x1="500" y1="20" x2="500" y2="360" stroke="#e2e7ec" stroke-width="1"/>
+
+          <!-- ===== LEFT: EXISTING ===== -->
+          <g>
+            <text x="40" y="34" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="1" fill="#8b95a1">EXISTING FIXTURE — UNSHIELDED</text>
+
+            <!-- pole -->
+            <rect x="66" y="90" width="8" height="250" fill="#c9d2da"/>
+            <!-- arm -->
+            <path d="M70 92 L230 68" stroke="#c9d2da" stroke-width="7" stroke-linecap="round" fill="none"/>
+            <!-- fixture body -->
+            <rect x="205" y="58" width="66" height="18" rx="6" fill="#1c2228"/>
+
+            <!-- spill rays: up, up-left, up-right, side -->
+            <g stroke="#c97f1f" stroke-width="2.5" stroke-linecap="round" opacity="0.55">
+              <line x1="238" y1="66" x2="238" y2="20"/>
+              <line x1="238" y1="66" x2="180" y2="30"/>
+              <line x1="238" y1="66" x2="120" y2="55"/>
+              <line x1="238" y1="66" x2="296" y2="30"/>
+              <line x1="238" y1="66" x2="360" y2="55"/>
+              <line x1="238" y1="66" x2="80" y2="100"/>
+              <line x1="238" y1="66" x2="410" y2="100"/>
+            </g>
+
+            <!-- main downward beam -->
+            <polygon points="238,68 150,340 330,340" fill="#c97f1f" opacity="0.16"/>
+
+            <!-- road -->
+            <rect x="20" y="340" width="440" height="14" fill="#55606b" opacity="0.18"/>
+            <line x1="30" y1="347" x2="450" y2="347" stroke="#8b95a1" stroke-width="2" stroke-dasharray="10 8"/>
+
+            <text x="40" y="392" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#55606b">Light spills upward and sideways</text>
+            <text x="40" y="410" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#55606b">in addition to reaching the road.</text>
+          </g>
+
+          <!-- ===== RIGHT: RETROFIT ===== -->
+          <g transform="translate(500,0)">
+            <text x="40" y="34" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="1" fill="#2e5c7a">WITH RETROFIT HOOD — EXPECTED</text>
+
+            <!-- pole -->
+            <rect x="66" y="90" width="8" height="250" fill="#c9d2da"/>
+            <!-- arm -->
+            <path d="M70 92 L230 68" stroke="#c9d2da" stroke-width="7" stroke-linecap="round" fill="none"/>
+            <!-- fixture body -->
+            <rect x="205" y="58" width="66" height="18" rx="6" fill="#1c2228"/>
+
+            <!-- hood shell -->
+            <path d="M188 44 L288 44 L296 66 L180 66 Z" fill="#2e5c7a"/>
+            <path d="M178 66 L298 66 L292 80 L184 80 Z" fill="#234a63"/>
+
+            <!-- minor residual spill (reduced, not eliminated) -->
+            <g stroke="#c97f1f" stroke-width="2" stroke-linecap="round" opacity="0.25">
+              <line x1="238" y1="80" x2="150" y2="95"/>
+              <line x1="238" y1="80" x2="326" y2="95"/>
+            </g>
+
+            <!-- main downward beam, preserved -->
+            <polygon points="238,80 160,340 316,340" fill="#c97f1f" opacity="0.2"/>
+
+            <!-- road -->
+            <rect x="20" y="340" width="440" height="14" fill="#55606b" opacity="0.18"/>
+            <line x1="30" y1="347" x2="450" y2="347" stroke="#8b95a1" stroke-width="2" stroke-dasharray="10 8"/>
+
+            <text x="40" y="392" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#55606b">Hood is intended to block upward and</text>
+            <text x="40" y="410" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#55606b">high-angle spill while keeping downward light.</text>
+          </g>
+        </svg>
+      </div>
+      <p style="margin-top:14px; font-size:0.85rem; color:var(--ink-faint);">
+        Illustrative schematic only. Ray angles and beam width are not derived from a photometric model — see
+        <a href="research.html">planned photometric simulation</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ REVISION HISTORY ============ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Revision history</span>
+        <h2>How the geometry has changed</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Version</th><th>Change</th></tr></thead>
+          <tbody>
+            <tr><td class="num">v0.1</td><td>Initial hood geometry</td></tr>
+            <tr><td class="num">v0.2</td><td>Improved side shielding</td></tr>
+            <tr><td class="num">v0.3</td><td>Revised clamp design</td></tr>
+            <tr><td class="num">v0.4</td><td><span class="status-pill status-ongoing">In progress</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DELIVERABLE FILES ============ -->
+  <section class="section-alt section-border">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">CAD package</span>
+        <h2>Deliverable files</h2>
+        <p>Current CAD package (Rev 1.0). Files will be linked directly from the repository's <code>/cad</code> folder once uploaded.</p>
+      </div>
+      <ul class="resource-list">
+        <li class="resource-item">
+          <div><div class="r-name">cobra_head_hood.step</div><div class="r-desc">Full parametric assembly — hood shell, clamp brackets, amber panel. Opens in SolidWorks, Fusion 360, FreeCAD, Onshape, Inventor.</div></div>
+          <span class="resource-tag">STEP</span>
+        </li>
+        <li class="resource-item">
+          <div><div class="r-name">cobra_head_hood.stl</div><div class="r-desc">Triangulated mesh for quick viewing or 3D printing.</div></div>
+          <span class="resource-tag">STL</span>
+        </li>
+        <li class="resource-item">
+          <div><div class="r-name">cobra_head_hood_ISO.svg</div><div class="r-desc">Clean isometric line drawing generated from the solid model.</div></div>
+          <span class="resource-tag">SVG</span>
+        </li>
+        <li class="resource-item">
+          <div><div class="r-name">hood.py</div><div class="r-desc">Parametric source script (CadQuery) — dimensions are named variables at the top of the file.</div></div>
+          <span class="resource-tag">Python</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>CHF-27-RH-001 · Rev 1.0 · Cobra-Head Fixture Retrofit Hood — Engineering Notebook</span>
+    <span><a href="contact.html">v.uppuloori7@gmail.com</a> · <a href="https://github.com/V-Upp" target="_blank" rel="noopener">GitHub</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

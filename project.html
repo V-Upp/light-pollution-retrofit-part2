@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project — Cobra-Head Retrofit Hood</title>
+<meta name="description" content="Background, objective, and constraints behind the cobra-head streetlight retrofit study.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <span class="brand-code">CHF-27-RH-001</span>
+      <span class="brand-name">Cobra-Head Retrofit Hood</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu ☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html" aria-current="page">Project</a></li>
+      <li><a href="design.html">Design</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Project</span>
+      <h1>Background &amp; objective</h1>
+      <p class="lede">Why this project exists, what we're trying to prove or disprove, and the constraints the design has to work within.</p>
+    </div>
+  </section>
+
+  <!-- ============ BACKGROUND / ORIGIN STORY ============ -->
+  <section>
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center; gap:40px;">
+        <div>
+          <h2>Background</h2>
+          <p>
+            In the winter of 2025, a road trip to Big Bend National Park — a designated International Dark
+            Sky Sanctuary — changed how we thought about the night sky. Sitting by a campfire, we waited for
+            the flames to die out completely so we could see true darkness.
+          </p>
+          <p>
+            The transition was striking. With no local light interference, the sky filled with a density of
+            stars we hadn't seen before — some faint, some bright, some seeming to trace their own shapes.
+            We could pick out Sagittarius, Capricornus, and plenty of unnamed patterns in between. For the
+            first time, we saw the night sky at something close to its actual scale.
+          </p>
+          <p>
+            Returning to North Texas, the contrast was jarring. The clarity of West Texas was replaced by a
+            washed-out urban skyglow. Constellations we'd mapped easily at Big Bend were gone, obscured by
+            artificial twilight. That contrast raised an obvious question: <em>why are we losing our night
+            skies at home?</em>
+          </p>
+          <p>
+            Our early research pointed to one contributor among several: standard, unshielded cobra-head
+            streetlights, which are common across the Dallas–Fort Worth area and can send a meaningful share
+            of their output sideways or upward instead of down onto the road. This notebook documents our
+            investigation into a mechanical, retrofit-based approach to that problem.
+          </p>
+        </div>
+        <div>
+          <figure class="figure" style="margin:0 0 16px;">
+            <img src="assets/images/bigbend-milkyway.jpg" alt="The Milky Way and dense star field over a mountain silhouette at Big Bend National Park.">
+          </figure>
+          <span class="photo-credit">Big Bend National Park, an International Dark Sky Sanctuary. Photos: Sam Goodgame &amp; David Morris / Unsplash.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt section-border">
+    <div class="container">
+      <figure class="figure" style="max-width:900px; margin:0 auto;">
+        <img src="assets/images/bigbend-stars.jpg" alt="Star field and Milky Way over the Chisos Mountains at Big Bend National Park, Texas.">
+        <div class="figure-caption">
+          <span class="cap-label">Reference</span>
+          <p>The kind of sky visibility that motivated this project — largely unavailable from inside the DFW metro area.</p>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section-border">
+    <div class="container">
+      <div class="grid grid-2" style="gap:40px;">
+        <div>
+          <span class="eyebrow">The problem</span>
+          <h2>An estimated 7 million DFW residents have limited or no view of the Milky Way</h2>
+          <p>
+            That figure reflects the approximate population of the Dallas–Fort Worth metro area, which sits
+            under persistent urban sky glow. We treat it as context for why this problem is worth studying
+            locally, not as a measurement we've produced ourselves.
+          </p>
+        </div>
+        <div>
+          <span class="eyebrow">Broader goal</span>
+          <h2>A retrofit approach for common streetlights in a heavily lit urban area</h2>
+          <p>
+            Specifically: investigate whether a retrofit can reduce light pollution from common cobra-head
+            streetlights already installed across Dallas–Fort Worth, without replacing them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OBJECTIVE ============ -->
+  <section class="section-alt section-border">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Objective</span>
+        <h2>What we're testing for</h2>
+        <p>Investigate whether a clamp-on retrofit hood can reduce glare and spill light without:</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><h3>No drilling</h3><p>Fixture stays mechanically unmodified.</p></div>
+        <div class="card"><h3>No fixture replacement</h3><p>Attaches to what's already installed.</p></div>
+        <div class="card"><h3>No added wind risk</h3><p>Shouldn't meaningfully increase wind loading on the pole.</p></div>
+        <div class="card"><h3>No maintenance conflict</h3><p>Doesn't block the access maintenance crews already need.</p></div>
+        <div class="card"><h3>No safety compromise</h3><p>Roadway illumination has to stay within acceptable range.</p></div>
+        <div class="card"><h3>Low cost, low weight</h3><p>Has to be realistic to manufacture and install at scale.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONSTRAINTS ============ -->
+  <section class="section-border">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Engineering constraints</span>
+        <h2>Design constraints</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Constraint</th><th>Reasoning</th></tr></thead>
+          <tbody>
+            <tr><td>No drilling or permanent modification</td><td>Preserves the existing fixture and avoids warranty or liability issues for the utility.</td></tr>
+            <tr><td>Low added weight</td><td>Minimizes additional structural load on the arm and pole.</td></tr>
+            <tr><td>Easy installation and removal</td><td>Needs to be practical for a maintenance crew, not just a lab bench.</td></tr>
+            <tr><td>Compatible with common cobra-head fixtures</td><td>Targets standard tenon-mount hardware already in the field.</td></tr>
+            <tr><td>Minimal impact on maintenance access</td><td>Shouldn't block the panels or points a crew already services.</td></tr>
+            <tr><td>Preserve roadway visibility and safety</td><td>The retrofit cannot come at the cost of driver safety — this is the non-negotiable constraint.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESIGN PHILOSOPHY ============ -->
+  <section class="section-alt section-border">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Design philosophy</span>
+        <h2>Every decision balances four factors</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><h3>Lighting performance</h3><p>Does it actually reduce glare and spill without gutting usable roadway light?</p></div>
+        <div class="card"><h3>Manufacturability</h3><p>Can it be built from common materials without specialized tooling?</p></div>
+        <div class="card"><h3>Cost &amp; maintenance</h3><p>Would a utility or municipality find installation and upkeep worth it?</p></div>
+      </div>
+      <p style="margin-top:20px; max-width:70ch;">Safety underlies all three — it isn't a fourth variable to trade off, it's the constraint the other three operate inside of.</p>
+    </div>
+  </section>
+
+  <!-- ============ LIMITATIONS + SUCCESS CRITERIA ============ -->
+  <section>
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="callout callout-amber">
+          <h3>Known limitations</h3>
+          <p style="margin-bottom:10px;">Being upfront about what this project has <em>not</em> yet done:</p>
+          <ul>
+            <li>No prototype built yet</li>
+            <li>No thermal analysis performed</li>
+            <li>No photometric simulation run</li>
+            <li>No wind testing conducted</li>
+            <li>No structural validation completed</li>
+            <li>CAD model only, at this stage</li>
+          </ul>
+        </div>
+        <div class="callout callout-blue">
+          <h3>Success criteria</h3>
+          <p style="margin-bottom:10px;">We'll consider this design promising if future analysis shows:</p>
+          <ul>
+            <li>Reduced glare</li>
+            <li>Reduced spill light</li>
+            <li>Acceptable roadway illumination</li>
+            <li>Manageable wind loading</li>
+            <li>Practical installation</li>
+            <li>Acceptable manufacturing cost</li>
+          </ul>
+          <p style="margin-top:10px; font-size:0.88rem;">If analysis says otherwise, the design gets revised — or dropped.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>CHF-27-RH-001 · Rev 1.0 · Cobra-Head Fixture Retrofit Hood — Engineering Notebook</span>
+    <span><a href="contact.html">v.uppuloori7@gmail.com</a> · <a href="https://github.com/V-Upp" target="_blank" rel="noopener">GitHub</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progress — Cobra-Head Retrofit Hood</title>
+<meta name="description" content="Chronological engineering notebook documenting design decisions and milestones for the retrofit hood project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <span class="brand-code">CHF-27-RH-001</span>
+      <span class="brand-name">Cobra-Head Retrofit Hood</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu ☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="design.html">Design</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="progress.html" aria-current="page">Progress</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Progress</span>
+      <h1>Engineering notebook</h1>
+      <p class="lede">
+        A running, chronological log of what we're working on and why. Newest entries first. This is meant to
+        show iteration honestly — including dead ends — not just finished work.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ AT A GLANCE (5-second test) ============ -->
+  <section class="tight section-border">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="card">
+          <h4 style="margin-bottom:6px;">What this is</h4>
+          <p style="color:var(--ink); font-size:0.95rem;">A retrofit hood study for cobra-head streetlights.</p>
+        </div>
+        <div class="card">
+          <h4 style="margin-bottom:6px;">Who's running it</h4>
+          <p style="color:var(--ink); font-size:0.95rem;">Two North Texas students, Varun Uppuloori &amp; Nabhya Sakalle.</p>
+        </div>
+        <div class="card">
+          <h4 style="margin-bottom:6px;">Is it active</h4>
+          <p style="color:var(--ink); font-size:0.95rem;"><span class="status-pill status-ongoing">Active</span> — last updated July 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section>
+    <div class="container">
+      <div class="timeline">
+
+        <div class="timeline-entry">
+          <span class="t-date">July 2026</span>
+          <h3>First CAD concept, proposal, and site launch</h3>
+          <p>This month's work moved the project from an idea to a documented, reviewable state.</p>
+          <ul>
+            <li>Completed the first CAD concept (Rev 1.0)</li>
+            <li>Published this documentation site</li>
+            <li>Prepared a written engineering proposal</li>
+            <li>Began outreach to professors for feedback</li>
+          </ul>
+          <div class="log-block">
+            <strong>Current focus:</strong> photometric simulation setup, wind load calculations, and CAD revisions based on early feedback.
+          </div>
+        </div>
+
+        <div class="timeline-entry">
+          <span class="t-date">Earlier — Problem framing</span>
+          <h3>Brainstorming: why streetlights, and why a hood</h3>
+          <p>Before settling on a retrofit hood, we worked through several other directions and ruled most of them out. Kept here mostly unedited, because the reasoning matters as much as the conclusion.</p>
+
+          <div class="log-block">
+            <span class="log-q">"Just turn off the lights?"</span> — No. Lights are necessary for driver safety at night, so removal isn't a real option.
+          </div>
+          <div class="log-block">
+            What are the actual requirements streetlighting has to meet? Are there things in DFW lighting that are unnecessary and contributing to light pollution? What are the main contributors?
+          </div>
+          <div class="log-block">
+            If replacing streetlights outright, the bigger question is cost and installation effort — any fix needs to be cheap and easy enough that someone would actually adopt it.
+          </div>
+          <div class="log-block">
+            Who owns and manages streetlights in the area? Utilities and municipal departments — companies like Oncor, along with city departments of transportation and public works. Oncor is already replacing older streetlights with LEDs, which is a separate but related trend.
+          </div>
+          <div class="log-block">
+            The common fixture type across DFW is the cobra-head streetlight. What makes a streetlight bad for light pollution, and how could it be improved? Light shining sideways, and sometimes upward, is largely unnecessary and is a direct source of light pollution.
+          </div>
+          <div class="log-block">
+            <span class="log-q">Idea:</span> put a hood or cover on fixtures that are contributing to light pollution, to physically block the unnecessary light. This became the direction we pursued.
+          </div>
+
+          <h4 style="margin-top:22px; margin-bottom:10px;">Cover / hood idea — early concerns</h4>
+          <div class="log-block">
+            What other problems do hoods or shielded fixtures introduce? Blue-white light at high color temperatures can be more harmful/disruptive than warmer light — worth considering a filter, not just a shield.
+          </div>
+          <div class="log-block">
+            <span class="log-q">Additional idea:</span> add a light filter (this became the amber filter panel in the current CAD model).
+          </div>
+          <div class="log-block">
+            <span class="log-q">Potential problems flagged early:</span> overheating inside an enclosed hood, and the risk of failing roadway lighting safety requirements if too much light gets blocked. Both are still open questions — see <a href="research.html">Research</a>.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="placeholder" style="margin-top:40px;">
+        <span class="ph-label">Notebook in progress</span>
+        Future entries will be added every few days and will document every design decision — including ones that get reversed.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>CHF-27-RH-001 · Rev 1.0 · Cobra-Head Fixture Retrofit Hood — Engineering Notebook</span>
+    <span><a href="contact.html">v.uppuloori7@gmail.com</a> · <a href="https://github.com/V-Upp" target="_blank" rel="noopener">GitHub</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

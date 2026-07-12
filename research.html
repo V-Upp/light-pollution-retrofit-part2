@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Cobra-Head Retrofit Hood</title>
+<meta name="description" content="Literature review outline, topics being studied, and open engineering questions guiding the retrofit design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <span class="brand-code">CHF-27-RH-001</span>
+      <span class="brand-name">Cobra-Head Retrofit Hood</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu ☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="design.html">Design</a></li>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="progress.html">Progress</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Research</span>
+      <h1>What we're studying</h1>
+      <p class="lede">
+        This page is an outline of the topics guiding the design, not a literature review. We haven't yet
+        compiled formal citations to specific papers or standards documents — that's listed as an open task
+        below, not something we're claiming to have done.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ EXISTING SOLUTIONS ============ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Context</span>
+        <h2>Existing solutions</h2>
+        <p>
+          A retrofit hood is one of several approaches to reducing streetlight light pollution. It's worth
+          being clear about where it sits relative to the others.
+        </p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Full-cutoff fixtures</h3>
+          <p>Fixtures designed from the start to direct all light downward, with no light emitted above horizontal.</p>
+        </div>
+        <div class="card">
+          <h3>Modern LED cobra-heads</h3>
+          <p>
+            Many current LED cobra-head luminaires already use full-cutoff or near-full-cutoff optics. We're
+            not assuming all cobra-head fixtures are poorly shielded — this project is specifically about
+            whether additional shielding helps on older or less-shielded installations.
+          </p>
+        </div>
+        <div class="card">
+          <h3>DarkSky recommendations</h3>
+          <p>DarkSky International publishes lighting principles aimed at reducing glare, light trespass, and sky glow. We're using these as a reference point, not a standard we've formally verified against yet.</p>
+        </div>
+        <div class="card">
+          <h3>Adaptive lighting</h3>
+          <p>Dimming or scheduling systems that reduce light output when it isn't needed (e.g., low-traffic hours), rather than reshaping the beam itself.</p>
+        </div>
+        <div class="card">
+          <h3>Retrofit vs. replacement</h3>
+          <p>Full fixture replacement can achieve more, but at higher up-front cost. A retrofit trades some performance ceiling for lower cost and faster deployment on existing infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOPICS BEING STUDIED ============ -->
+  <section class="section-alt section-border">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Topics being studied</span>
+        <h2>Key topics</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><h3>BUG ratings</h3><p>Backlight, Uplight, Glare — the IES classification system for how a fixture distributes light.</p></div>
+        <div class="card"><h3>Light trespass</h3><p>Light landing where it isn't wanted — neighboring properties, windows, natural areas.</p></div>
+        <div class="card"><h3>Sky glow</h3><p>Light scattered upward into the atmosphere, brightening the night sky over a wide area.</p></div>
+        <div class="card"><h3>Color temperature</h3><p>Bluer, higher-CCT light scatters more and is associated with greater sky glow and glare.</p></div>
+        <div class="card"><h3>Roadway illumination standards</h3><p>The minimum lighting levels a retrofit can't be allowed to compromise.</p></div>
+        <div class="card"><h3>Heat dissipation</h3><p>Whether enclosing part of the fixture traps heat and shortens LED lifespan.</p></div>
+        <div class="card"><h3>Wind loading</h3><p>Added surface area on the pole arm, and what that means structurally.</p></div>
+        <div class="card"><h3>Maintenance requirements</h3><p>What utility crews actually need access to, and how often.</p></div>
+        <div class="card"><h3>Manufacturing</h3><p>Realistic materials and processes for producing the hood at any scale.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPEN ENGINEERING QUESTIONS ============ -->
+  <section class="section-border">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Open questions</span>
+        <h2>What we don't know yet</h2>
+      </div>
+      <ul class="checklist">
+        <li><span>How much glare reduction is achievable?</span><span class="status-pill status-planned">Open</span></li>
+        <li><span>Will roadway illumination remain within acceptable ranges?</span><span class="status-pill status-planned">Open</span></li>
+        <li><span>Does the hood affect heat dissipation?</span><span class="status-pill status-planned">Open</span></li>
+        <li><span>How much does wind loading increase?</span><span class="status-pill status-planned">Open</span></li>
+        <li><span>Would installation be practical for maintenance crews?</span><span class="status-pill status-planned">Open</span></li>
+        <li><span>What standards would municipalities require before allowing testing?</span><span class="status-pill status-planned">Open</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CURRENT LIMITATIONS ============ -->
+  <section class="section-alt section-border">
+    <div class="container">
+      <div class="callout callout-amber">
+        <h3>Current limitations of this page</h3>
+        <ul>
+          <li>No formal literature review completed — topics above are a study outline, not a synthesis of sources.</li>
+          <li>No citations to specific papers, standards, or DarkSky/IES documents yet.</li>
+          <li>No photometric, thermal, or wind analysis performed.</li>
+          <li>No structural or field validation performed.</li>
+        </ul>
+      </div>
+      <div class="placeholder" style="margin-top:20px;">
+        <span class="ph-label">Placeholder — pending</span>
+        A second contributor is planning to add supporting images and written commentary to this page. Content here may be revised.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>CHF-27-RH-001 · Rev 1.0 · Cobra-Head Fixture Retrofit Hood — Engineering Notebook</span>
+    <span><a href="contact.html">v.uppuloori7@gmail.com</a> · <a href="https://github.com/V-Upp" target="_blank" rel="noopener">GitHub</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
